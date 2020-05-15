@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">    
+  </head>
+
+  <body>
+    <!--INTRO-->
+    <section class="intro">
+      <h1>Pedra, Papel e Tesoura</h1>
+      <img src="./src/pedra-papel-tesoura.png" alt="pedra-papel-tesoura">
+    </section>
+
+    <section class="rules">
+        <div class="explain">
+          <h2>Regras</h2>
+          <ul>
+              <li>Você <span>x</span> Máquina</li>
+              <br>
+              <li>Escolha: <span>pedra</span>, <span>papel</span> ou <span>tesoura</span> <span class="secreat">, sabre de luz</span> </li>
+              <br>
+              <li>Pressione <span>"Jogar"</span> para iniciar a batalha</li>
+              <br>
+              <li>Pressione <span>"Recomeçar"</span> para jogar novamente</li>
+          </ul>
+        </div>
+    </section>
+
+    <!--BATTLE-->
+    <section class="battle">
+        <div class="battle-intro">
+          <img src="./src/sword.png" alt="espada" class="sword">
+          <h2>Batalha</h2>
+          <img src="./src/sword.png" alt="espada" class="sword">
+        </div>  
+        <div class="battle-inputs">
+            <div class="battle-user">
+                <h3>Você</h3>
+                <img src="./src/jedi.png" class="player">
+                <p>Sua Escolha:</p>
+                <input type="text" name="userInput" id="userInput">
+            </div>
+            <div class="battle-pc">
+                <h3>Máquina</h3>
+                <img src="./src/robot.png" class="player">
+                <p>Escolha da Máquina:</p>
+                <p id="robotChoice"></p>
+            </div>
+        </div>
+        <button class="jogar" onclick="playGame()">Jogar</button>
+        
+        <br>
+        <h2 id="results"></h2>
+        <br>
+        <a href="index.html">
+          <button class="recomeçar">Recomeçar</button>
+        </a>
+    </section>
+
+
+
+    <script src="./playGame.js"></script> 
+  </body>
+
+</html>
